@@ -94,7 +94,7 @@
     }
   }
 
-  @media only screen and (hover: none) {
+  @media only screen and (hover: none), (pointer: coarse) {
     height: 60rem;
     border-radius: 1rem;
     box-shadow: 0 1.5rem 4rem rgba($color-text-primary, 0.25);

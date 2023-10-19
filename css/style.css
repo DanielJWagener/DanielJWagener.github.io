@@ -183,7 +183,7 @@ h3 {
       background-image: linear-gradient(to right bottom, rgba(0, 121, 107, 0.8), rgba(178, 223, 219, 0.6)), url("../../img/mapbox.png"); }
     .flipcard .project-image--4 {
       background-image: linear-gradient(to right bottom, rgba(25, 118, 210, 0.8), rgba(187, 222, 251, 0.6)), url("../../img/blender.png"); }
-  @media only screen and (hover: none) {
+  @media only screen and (hover: none), (pointer: coarse) {
     .flipcard {
       height: 60rem;
       border-radius: 1rem;
@@ -291,6 +291,10 @@ h3 {
     height: 2000px;
     transform: translateY(-100%);
     background-color: #dddddd; }
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
   .about__headshot {
     width: 25rem;
     height: auto;
@@ -302,11 +306,10 @@ h3 {
   @media only screen and (max-width: 46.25em) {
     .about {
       flex-direction: column;
-      justify-content: center;
-      height: 125vh;
-      padding: 28vh 5rem 25vh 5rem;
-      margin-top: -30vh;
-      margin-top: calc(var(--vh, 1vh) * -30); }
+      justify-content: center; }
+      .about__content {
+        flex-direction: column;
+        justify-content: center; }
       .about__headshot {
         margin-bottom: 4rem; }
       .about__description {
@@ -314,25 +317,13 @@ h3 {
         margin-left: 0; } }
   @media only screen and (max-width: 36.875em) {
     .about {
-      height: calc(1vh * 100 / (87 / 100));
-      height: calc(var(--vh, 1vh) * 100 / (87 / 100));
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
-      padding: 0 5rem 0 5rem;
-      margin-top: -17vh;
-      margin-top: calc(var(--vh, 1vh) * -17); } }
+      padding: 0 5rem 10rem 5rem; } }
   @media only screen and (max-width: 26.875em) {
     .about {
-      padding: 5rem 2rem 0 2rem; } }
+      padding: 5rem 2rem 10rem 2rem; } }
   @media only screen and (max-width: 23.45em) {
     .about {
-      height: calc(1vh * 100 / (92 / 100));
-      height: calc(var(--vh, 1vh) * 100 / (92 / 100));
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 92%, 0% 100%);
-      padding: 6rem 1.5rem 0 1.5rem;
-      margin-top: -17vh;
-      margin-top: calc(var(--vh, 1vh) * -17); } }
+      padding: 6rem 1.5rem 10rem 1.5rem; } }
 
 #contact {
   background-color: #454857;

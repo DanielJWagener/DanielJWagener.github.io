@@ -15,12 +15,12 @@
   justify-content: space-around;
   align-items: center;
   padding: 20rem 10rem;
-  // margin-top: -40vh;
-  // margin-top: calc(var(--vh, 1vh) * -40);
 
-  // @include bottom-slant-clip-path(80);
-
-  // min-height: 1000px;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
   &__headshot {
     width: 25rem;
@@ -37,10 +37,11 @@
   @media only screen and (max-width: 46.25em) {
     flex-direction: column;
     justify-content: center;
-    height: 125vh;
-    padding: 28vh 5rem 25vh 5rem;
-    margin-top: -30vh;
-    margin-top: calc(var(--vh, 1vh) * -30);
+
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+    }
 
     &__headshot {
       margin-bottom: 4rem;
@@ -54,21 +55,15 @@
 
   // Soften clip-path angle on smaller screens
   @media only screen and (max-width: 36.875em) {
-    @include bottom-slant-clip-path(87);
-    padding: 0 5rem 0 5rem;
-    margin-top: -17vh;
-    margin-top: calc(var(--vh, 1vh) * -17);
+    padding: 0 5rem 10rem 5rem;
   }
 
   @media only screen and (max-width: 26.875em) {
-    padding: 5rem 2rem 0 2rem;
+    padding: 5rem 2rem 10rem 2rem;
   }
 
   // Soften clip-path angle on smaller screens
   @media only screen and (max-width: 23.45em) {
-    @include bottom-slant-clip-path(92);
-    padding: 6rem 1.5rem 0 1.5rem;
-    margin-top: -17vh;
-    margin-top: calc(var(--vh, 1vh) * -17);
+    padding: 6rem 1.5rem 10rem 1.5rem;
   }
 }
